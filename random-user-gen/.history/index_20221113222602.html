@@ -9,9 +9,9 @@
   </head>
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-  
+
   <div id="app">
-    <h1>{{ firstName }} {{ lastName }}</h1>
+    <h1>Hello {{ firstName }}</h1>
   </div>
 
   <script>
@@ -21,14 +21,11 @@
       // template: '<h1>Hello World</h1>',
       data() {
         return {
-          firstName: "John",
-          lastName: "Doe",
-          email: "john@gmail.com",
-          gender: "male",
-          picture: "https://randomuser.me/api/portraits/men/10.jpg",
+          firstName: 'John',
+          lastName: 'Doe'
         };
       },
     });
-    app.mount("#app");
+    app.mount('#app');
   </script>
 </html>
